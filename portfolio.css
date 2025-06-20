@@ -1,0 +1,342 @@
+body{
+  margin: 0;
+  background-color: #1f2020;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+p{
+  font-weight: lighter;
+}
+
+
+
+
+/* Style the header with a grey background and some padding */
+#header {
+  overflow: hidden;
+  background-color: #2d2d2d;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+#header a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin: 0;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+#header a.logo {
+  padding: 0 0 0 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+#header a:hover {
+  background-color: #aaa;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Style the active/current link*/
+#header a.active {
+  background-color: #ddd;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+  padding: 50px 200px;
+}
+
+#hero{
+  margin: 0;
+  background-image: url(assets/images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  align-content: center;
+}
+#education{
+  padding: 50px 100px;
+}
+#projects{
+  text-align: center;
+  padding: 50px 100px;
+}
+#contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+h1{
+  margin: 0;
+  font-size: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  /* background: linear-gradient(45deg, #993131, #FF5252);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; */
+}
+h2{
+  font-size: 3rem;
+  /* color: goldenrod; */
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 100px;        /* or 100% */
+  height: 2px;
+  background-color: white;
+  margin-top: 5px;
+}
+.left{
+  text-align: left;
+}
+h3{
+  font-size: 2rem;
+  color: #FF5252;
+}
+h4{
+  font-size: 1.5rem;
+  /* color: #bac964; */
+}
+h5{
+  margin: 0;
+  margin-bottom: 16px;
+  color: white;
+}
+h6{
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: #FF5252;
+  margin: 0;
+}
+.intro-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+
+}
+.yinka{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 16px;
+  margin-right: 16px;
+  width: 250px;
+  height: 50px;
+  border: none;
+  background-color: #aaa;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+.yinka:hover{
+  background-color: #993131;
+  color: white  ;
+  transition: all 0.5s ease-in-out;
+}
+dot{
+  color: #FF5252;
+}
+.img-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px
+}
+.card{
+  /* background-color: #5f5f5f; */
+  width: 100%;
+  height: auto;
+  margin-bottom: 48px;
+}
+.card-pic{
+  height: 300px;
+  width: 100%;
+  background-color: #1f2020;
+  border-radius: 10px;
+}
+.card-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.card-img:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.pic-one{
+  width: 70%;
+}
+.card-two{
+  background-color: #2d2d2d;
+}
+ul{
+  text-align: left;
+  /* color: #bac964; */
+}
+
+
+
+button a{
+  width: 300px;
+  height: 300px;
+}
+.contact-pic{
+  width: 100%;
+  height: 500px;
+  /* background-color: red; */
+}
+.contact-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.svg{
+  background-color: #aaa;
+  border-radius: 50%;
+  border: 10px solid #aaa;
+  margin-right: 8px;
+}
+.details{
+  display: flex;
+  align-items: center;
+}
+hr{
+  width: 80%;
+}
+
+
+.education-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 50px;
+}
+
+.education{
+  width: 100%;
+}
+.experience{
+  width: 100%;
+}
+.exp{
+  background-color: #2d2d2d;  
+  padding: 30px;
+  border-radius: 10px;
+  color: #b0b0b0;
+}
+.logo-pic{
+  margin: 0 16px 0 0;
+  width: 50px;
+  border-radius: 50%;
+}
+.logo{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+footer{
+  padding: 50px 0 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin: 0;
+}
+.footer-right {
+  float: right;
+}
+footer a:hover {
+  background-color: #ddd;
+  transition: all 0.5s ease-in-out;
+  color: black;
+}
+.ft-line{
+  width: 95%;
+}
+.footer-logo{
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  body{
+    font-size: 12px;
+  }
+  #hero{
+    background-image: url(assets/images/bg-header-mobile.png);  
+    height: 450px;
+  }
+  .logo{
+    font-size: 14px;
+  }
+  .logo-pic{
+    width: 32px;
+    height: 32px;
+  }
+  .intro-grid, .education-grid, .img-grid, #contact{
+    display: block;
+  }
+  
+  h1{
+    font-size: 2rem ;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  section{
+    padding: 0 30px;
+  }
+  #education{
+    padding: 0 30px;
+  }
+  #projects{
+    padding: 0 30px;
+  }
+}
