@@ -7,7 +7,9 @@ body{
 }
   
 
-
+img{
+  object-fit: cover;
+}
 
 
 
@@ -17,7 +19,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 50px;
     
   }
   .accordion {    
@@ -50,9 +52,10 @@ body{
     z-index: 1;
   }
   .card{
-    background-color: #5f5f5f;
+    /* background-color: #5f5f5f; */
     width: 100%;
     height: 400px;
+    padding: 16px;
   }
   .card-pic{
     height: 250px;
@@ -166,12 +169,13 @@ h2{
   .card-img{
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
   }
-  .card-img:hover{
+  .card:hover{
     transition: all 0.4s ease-in-out;
-    transform: scale(1.1);
-    border-radius: 5px;
+    /* transform: scale(1.05); */
+    border-radius: 20px;
+    background-color: #5f5f5f;
   }
   .card-two{
     background-color: #2d2d2d;
@@ -180,28 +184,29 @@ h2{
     text-align: left;
   }
   .card{
-    background-color: #5f5f5f;
     width: 100%;
     height: auto;
     margin-bottom: 48px;
     border-radius: 10px;
   }
   .card-pic{
-    height: 300px;
+    max-height: 300px;
     width: 100%;
     background-color: #1f2020;
-    border-radius: 5px;
+    border-radius: 10px;
+  }
+  .pic-six{
+    object-fit: none;
   }
   .pic-seven, .pic-nine{
     height: auto;
     border-radius: 5px;
   }
+  .pic-nine{
+    height: 270px;
+  }
   .card-eight{
     background-color: white;
-  }
-  .card-eight:hover{
-    transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
   }
   .pic-eight{
     background-color: #ffffff;
@@ -217,12 +222,19 @@ h2{
 
 
 
-  @media (max-width: 600px) {
+  @media (max-width: 675px) {
   body{
     font-size: 16px;
   }
+  .header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
   #project{
-    margin: 0 30px;
+    margin: 0 100px;
     display: block;
   }
   .title{
@@ -236,7 +248,37 @@ h2{
   }
 }
 
-@media (max-width: 900px) {
+
+
+@media (max-width: 500px) {
+  #project{
+    margin: 0 50px;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  h4{
+    font-size: 1.3rem;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
+
+
+@media (max-width: 375px) {
+  .header a{
+    font-size: 14px;
+  }
+  #project{
+    margin: 0 30px;
+  }
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
   #project{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
