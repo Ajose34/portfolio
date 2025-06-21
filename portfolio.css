@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   background-color: #1f2020;
@@ -24,12 +27,12 @@ p{
   float: left;
   color: #ffffff;
   text-align: center;
-  padding: 12px;
+  padding: 8px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
-  margin: 0;
+  margin: auto 8px;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -74,7 +77,7 @@ p{
 
 
 section{
-  padding: 50px 200px;
+  padding: 50px 100px;
 }
 
 #hero{
@@ -84,6 +87,8 @@ section{
   background-size: cover;
   height: 80vh;
   align-content: center;
+  text-align: center;
+  scroll-behavior: smooth;
 }
 #education{
   padding: 50px 100px;
@@ -91,15 +96,17 @@ section{
 #projects{
   text-align: center;
   padding: 50px 100px;
+  scroll-behavior: smooth;
 }
-#contact{
+/* #contact{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-}
+  scroll-behavior: smooth;
+} */
 h1{
   margin: 0;
-  font-size: 5rem;
+  font-size: 7.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   
   /* background: linear-gradient(45deg, #993131, #FF5252);
@@ -107,6 +114,9 @@ h1{
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent; */
+}
+.adeyimika{
+  margin: 0;
 }
 h2{
   font-size: 3rem;
@@ -146,7 +156,7 @@ h6{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 20px;
+  gap: 50px;
 
 }
 .yinka{
@@ -156,18 +166,18 @@ h6{
 
   margin-top: 16px;
   margin-right: 16px;
-  width: 250px;
+  width: 200px;
   height: 50px;
   border: none;
-  background-color: #aaa;
+  background-color: #fff;
   border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
-  color: #000;
+  color: #1a1a1a;
 }
 .yinka:hover{
-  background-color: #993131;
-  color: white  ;
+  background-color: #bbb;
+  color: #1a1a1a  ;
   transition: all 0.5s ease-in-out;
 }
 dot{
@@ -175,20 +185,21 @@ dot{
 }
 .img-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 50px
 }
 .card{
   /* background-color: #5f5f5f; */
   width: 100%;
   height: auto;
+  padding: 16px;
   margin-bottom: 48px;
 }
 .card-pic{
   height: 300px;
   width: 100%;
-  background-color: #1f2020;
+  /* background-color: #1f2020; */
   border-radius: 10px;
 }
 .card-img{
@@ -196,14 +207,11 @@ dot{
   height: 100%;
   border-radius: 10px;
 }
-.card-img:hover{
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
+.card:hover {
+  background-color: #3d3d3d;
+  /* padding: 20px; */
 }
-.pic-one{
-  width: 70%;
-}
+
 .card-two{
   background-color: #2d2d2d;
 }
@@ -212,29 +220,40 @@ ul{
   /* color: #bac964; */
 }
 
-
+img{
+  object-fit: cover;
+}
 
 button a{
   width: 300px;
   height: 300px;
 }
-.contact-pic{
-  width: 100%;
-  height: 500px;
-  /* background-color: red; */
-}
+/* .contact-pic{
+  background-color: red;
+} */
 .contact-img{
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
+}
+.contact-link{
+  display: flex;
+  gap: 32px;
+}
+.cont{
+  font-size: 2rem;
+}
+#contact a{
+  color: #ffffff;
+  text-decoration: none;
 }
 .svg{
   background-color: #aaa;
   border-radius: 50%;
-  border: 10px solid #aaa;
+  border: 8px solid #aaa;
   margin-right: 8px;
 }
 .details{
+  margin: 8px 8px;
   display: flex;
   align-items: center;
 }
@@ -288,7 +307,8 @@ footer a {
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
-  margin: 0;
+  margin: auto 8px;
+  transition: 300ms;
 }
 .footer-right {
   float: right;
@@ -320,7 +340,7 @@ footer a:hover {
     width: 32px;
     height: 32px;
   }
-  .intro-grid, .education-grid, .img-grid, #contact{
+  .education-grid, .img-grid, #contact{
     display: block;
   }
   
@@ -338,5 +358,63 @@ footer a:hover {
   }
   #projects{
     padding: 0 30px;
+  }
+}
+
+
+
+@media (min-width:600px) and (max-width:900px) {
+  .img-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .intro-grid{
+    display: block;
+  }
+  .contact-link{
+    display: block;
+  }
+}
+
+
+@media (max-width: 700px) {
+  #header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-left{
+    order: 1;
+  }
+}
+
+
+@media (max-width: 405px) {
+  footer{
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-right{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 365px) {
+  #header a{
+    font-size: 14px;
   }
 }
