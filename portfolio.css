@@ -433,6 +433,9 @@ footer a:hover {
   .ft-line{
     margin-top: 150px;
   }
+  .logo-pic{
+    margin: 0;
+  }
   footer{
     justify-content: center;
     align-items: center;
