@@ -85,7 +85,7 @@ h2{
   margin-bottom: 10px;
 }
 .title{
-  margin: auto 150px;
+  margin: 64px 150px;
 }
 
 
@@ -169,12 +169,13 @@ h2{
   .card-img{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
   }
   .card:hover{
     transition: all 0.4s ease-in-out;
     /* transform: scale(1.05); */
     border-radius: 20px;
+    /* padding: 20px; */
     background-color: #5f5f5f;
   }
   .card-two{
@@ -234,17 +235,19 @@ h2{
     align-items: center;
   }
   #project{
-    margin: 0 100px;
+    /* margin: 0 50px; */
     display: block;
   }
   .title{
-    margin: 0 30px 75px;
+    margin: 32px 30px 75px;
   }
   h1{
     font-size: 2.5rem
   }
   .card{
     background-color: #2d2d2d00;
+    padding: 0;
+    margin: 64px auto;
   }
 }
 
@@ -262,6 +265,9 @@ h2{
   }
   p{
     font-size: 14px;
+  }
+  h1::after {
+    width: 50px;        /* or 100% */
   }
 }
 
