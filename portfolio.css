@@ -429,7 +429,10 @@ footer a:hover {
 }
 
 
-@media (max-width: 405px) {
+@media (max-width: 450px) {
+  .ft-line{
+    margin-top: 150px;
+  }
   footer{
     justify-content: center;
     align-items: center;
@@ -447,7 +450,7 @@ footer a:hover {
   }
   .yinka{
     width: 100%;
-    padding: 16px 0;
+    padding: 12px 0;
   }
 }
 
