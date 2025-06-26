@@ -375,9 +375,9 @@ footer a:hover {
   #education{
     padding: 0 30px;
   }
-  #projects{
+  /* #projects{
     padding: 0 30px;
-  }
+  } */
 }
 
 
@@ -409,7 +409,7 @@ footer a:hover {
 
 
 
-@media (min-width:600px) and (max-width:900px) {
+@media (min-width:600px) and (max-width:1000px) {
   .img-grid{
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -429,6 +429,26 @@ footer a:hover {
   }
 }
 
+@media (max-width: 800px) {
+  #projects{
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  #projects{
+    padding: 0 100px;
+  }
+  .img-grid{
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  #projects{
+    padding: 0 30px;
+  }
+}
 
 @media (max-width: 730px) {
   #header{
@@ -512,5 +532,8 @@ footer a:hover {
   } 
   .text{
     font-size: 0.8rem;
+  }
+  #projects{
+    padding: 0 16px;
   }
 }
