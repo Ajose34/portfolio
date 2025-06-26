@@ -97,6 +97,7 @@ section{
   padding: 50px 100px;
   scroll-behavior: smooth;
 }
+
 /* #contact{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -149,6 +150,10 @@ h6{
   font-weight: lighter;
   color: #FF5252;
   margin: 0;
+}
+.text{
+  text-align: left;
+  font-size: 1.5rem;
 }
 .intro-grid{
   display: grid;
