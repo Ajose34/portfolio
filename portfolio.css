@@ -124,7 +124,7 @@ h2{
 .head::after {
   content: "";
   display: block;
-  width: 100px;        /* or 100% */
+  width: 10%;        /* or 100% */
   height: 2px;
   background-color: white;
   margin-top: 5px;
@@ -188,8 +188,8 @@ dot{
 }
 .card{
   /* background-color: #5f5f5f; */
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
   padding: 16px;
   margin-inline: auto;
   margin-bottom: 48px;
@@ -255,6 +255,9 @@ button a{
   margin: 8px 8px;
   display: flex;
   align-items: center;
+}
+#contact a:hover{
+  text-decoration: underline;
 }
 hr{
   width: 80%;
@@ -358,6 +361,9 @@ footer a:hover {
   h6{
     font-size: 2rem;
   }
+  .text{
+    font-size: 1rem;
+  }
   section{
     padding: 0 30px;
   }
@@ -377,12 +383,19 @@ footer a:hover {
   .head{
     font-size: 2rem;
   }
+  .sub-head-one{
+    font-size: 1.5rem;
+  }
   .description{
     font-size: 1.5rem;
   }
-  .card{
-    padding: 0;
+  .head::after {
+    width: 30%;
   }
+
+  /* .card{
+    padding: 0;
+  } */
 }
 
 
@@ -406,6 +419,9 @@ footer a:hover {
   .contact-link{
     display: block;
   }
+  .head::after {
+    width: 20%;
+  }
 }
 
 
@@ -425,6 +441,9 @@ footer a:hover {
   }
   .footer-left{
     order: 1;
+  }
+  .head::after {
+    width: 20%;
   }
 }
 
@@ -455,6 +474,9 @@ footer a:hover {
     width: 100%;
     padding: 12px 0;
   }
+  .head::after {
+    width: 40%;
+  }
 }
 
 
@@ -468,10 +490,22 @@ footer a:hover {
   .head{
     font-size: 1.5rem;
   }
-  h3{
+  h3, .sub-head-one{
     font-size: 1rem;
+  }
+  .intro-grid{
+    margin-top: 24px;
+  }
+  .intro-grid p{
+    margin-top: 0;
+  }
+  h3{
+    margin-bottom: 8px;
   }
   .description{
     font-size: 1rem;
   } 
+  .text{
+    font-size: 0.8rem;
+  }
 }
